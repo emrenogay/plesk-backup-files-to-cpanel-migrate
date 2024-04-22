@@ -96,8 +96,8 @@ foreach ($tarFiles as $file){
         echo '========================================================================' . PHP_EOL;
 
         $cPanelUserName = str_replace('.', '', $dbData['domain']);
-        if(strlen($cPanelUserName) > 5){
-            $cPanelUserName = substr($cPanelUserName, 0, 5) . rand(10,99);
+        if(strlen($cPanelUserName) > 7){
+            $cPanelUserName = substr($cPanelUserName, 0, 7) . rand(10,99);
         }
 
         $cPanelAccountStatus = shell_exec("whmapi1 --output=jsonpretty createacct username='{$cPanelUserName}' domain='{$dbData['domain']}'" . $output);
