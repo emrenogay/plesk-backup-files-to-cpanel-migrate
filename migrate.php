@@ -25,6 +25,7 @@ if(!empty($tarFiles)){
     die($msg . "\n");
 }
 
+echo shell_exec('whmapi1 set_tweaksetting key=database_prefix value=0');
 foreach ($tarFiles as $file){
     echo '========================================================================' . PHP_EOL;
     echo 'Starting extract for ' . $file . PHP_EOL;
@@ -240,3 +241,5 @@ foreach ($tarFiles as $file){
     }
 
 }
+
+echo shell_exec('whmapi1 set_tweaksetting key=database_prefix value=1');
