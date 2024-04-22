@@ -7,6 +7,6 @@ Enter your linux server command line with root credentials and apply on the code
 
     cd /root && wget https://raw.githubusercontent.com/emrenogay/plesk-backup-files-to-cpanel-migrate/main/migrate.php
     chmod +x migrate.sh
-    ./migrate.sh
+    php migrate.sh
 
     
