@@ -1,3 +1,6 @@
+#Disclaimer
+Use at your own risk!
+
 # Plesk Backup Files to cPanel Migration
 It's a command line PHP script. You have to be root or same privileges for run.
 
